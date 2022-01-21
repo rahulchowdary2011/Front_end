@@ -1,0 +1,66 @@
+<div class="login-container">
+  <div class="header">
+    <div class="row justify-content-center">
+      <h2 class="text-white">Welcome!</h2>
+    </div>
+  </div>
+</div>
+
+<div class="content-container  pb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card text-center">
+        <div class="card-header bg-transparent pb-2">
+          <a  class="btn btn-neutral btn-icon">
+            <span class="btn-inner--icon"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-badge" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v11.755S4 12 8 12s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+              <path fill-rule="evenodd" d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z"/>
+            </svg></span>
+            </a>
+        </div>
+        <div class="card-body">
+          <div class="text-center text-muted mb-4">
+            <strong>Sign in with credentials</strong>
+          </div>
+          <form class="form-signin" [formGroup]="loginForm" (ngSubmit)="onPress()">
+            <h1 class="h3 mb-3 font-weight-normal h3-text-change"></h1>
+              <div class="input-group flex-nowrap mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-open" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.818l5.724 3.465L8 8.917l1.276.766L15 6.218V5.4a1 1 0 0 0-.53-.882l-6-3.2zM15 7.388l-4.754 2.877L15 13.117v-5.73zm-.035 6.874L8 10.083l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738zM1 13.117l4.754-2.852L1 7.387v5.73zM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2z"/>
+                  </svg></span>
+                </div>
+                <input class="form-control" placeholder="Email Address" formControlName="userName" type="email">
+              </div>
+
+              <div class="input-group flex-nowrap mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-unlock" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M9.655 8H2.333c-.264 0-.398.068-.471.121a.73.73 0 0 0-.224.296 1.626 1.626 0 0 0-.138.59V14c0 .342.076.531.14.635.064.106.151.18.256.237a1.122 1.122 0 0 0 .436.127l.013.001h7.322c.264 0 .398-.068.471-.121a.73.73 0 0 0 .224-.296 1.627 1.627 0 0 0 .138-.59V9c0-.342-.076-.531-.14-.635a.658.658 0 0 0-.255-.237A1.122 1.122 0 0 0 9.655 8zm.012-1H2.333C.5 7 .5 9 .5 9v5c0 2 1.833 2 1.833 2h7.334c1.833 0 1.833-2 1.833-2V9c0-2-1.833-2-1.833-2zM8.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+                  </svg></span>
+                </div>
+                <input class="form-control" style="margin-bottom: 0px;"  placeholder="Password" formControlName="passWord" type="password">
+              </div>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block my-4" type="submit">Sign in</button>
+          </form>
+        </div>
+        <div class="card-footer text-muted">
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-6">
+        <a href="javascript:void(0)" class="text-white"><strong>Forgot password</strong></a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="javascript:void(0)" class="text-white"><strong>Help ?</strong></a>
+      </div>
+      </div>
+  </div>
+
+  
+</div>
